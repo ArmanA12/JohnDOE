@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John DOE Portfolio | Premium AI Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            gridTemplateColumns: {
+              '53': 'repeat(53, minmax(0, 1fr))',
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+        :root {
+          /* USER SPECIFIED PREMIUM SHADOW */
+          --premium-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 4px 0 #e2e8f0;
+        }
+        .dark {
+          --premium-shadow: inset 0 1px 4px rgba(255, 255, 255, 0.1), 0 10px 0 #000, 0 25px 50px rgba(0, 0, 0, 0.9);
+        }
+
+        body {
+            font-family: 'Inter', 'sans-serif';
+            scroll-behavior: smooth;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        .dark ::-webkit-scrollbar-track {
+            background: #0d0d0d;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #d4d4d8;
+            border-radius: 10px;
+        }
+        .dark ::-webkit-scrollbar-thumb {
+            background: #27272a;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #f59e0b;
+        }
+        html {
+          scroll-padding-top: 120px;
+        }
+
+        .premium-key {
+            transition: transform 0.2s cubic-bezier(0.2, 0, 0, 1), box-shadow 0.2s ease;
+            background: #fff;
+        }
+        .dark .premium-key {
+            background: #0d0d0d;
+        }
+        
+        .scan-line {
+          position: absolute;
+          left: 0;
+          top: -10%;
+          width: 100%;
+          height: 15%;
+          background: linear-gradient(to bottom, transparent, rgba(245, 158, 9, 0.1), transparent);
+          z-index: 20;
+          pointer-events: none;
+          opacity: 0.5;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar {
+          height: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+          background: #3f3f46;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@19.0.0",
+    "react-dom": "https://esm.sh/react-dom@19.0.0",
+    "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
+    "lucide-react": "https://esm.sh/lucide-react@0.460.0?deps=react@19.0.0",
+    "framer-motion": "https://esm.sh/framer-motion@11.11.17?deps=react@19.0.0",
+    "gsap": "https://esm.sh/gsap@3.12.5",
+    "gsap/TextPlugin": "https://esm.sh/gsap@3.12.5/TextPlugin",
+    "react-icons/si": "https://esm.sh/react-icons@5.3.0/si?deps=react@19.0.0",
+    "react-icons/fa": "https://esm.sh/react-icons@5.3.0/fa?deps=react@19.0.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "gsap/": "https://esm.sh/gsap@^3.14.2/",
+    "react-icons/": "https://esm.sh/react-icons@^5.5.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="transition-colors duration-500 selection:bg-amber-500 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="index.tsx"></script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
